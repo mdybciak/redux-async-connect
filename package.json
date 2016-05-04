@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "babel ./modules -d lib --ignore '__tests__'",
+    "postinstall": "babel ./modules -d lib --ignore '__tests__'",    
     "lint": "eslint modules",
     "start": "babel-node example/server.js",
     "test": "npm run lint && karma start",
